@@ -6,13 +6,85 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.navigation-bar{
-   background-color: black;
-    width: 100vw;
-    height: 100px;
+.navbar {
+  width: 100vw;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #00bcd4;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: flex;
   }
+
+  .menu {
+      display: none;
+      flex-direction: column;
+      background-color: transparent;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      left: 0;
+      padding: 10px 0;
+      z-index: 1;
+  }
+
+  .menu.active {
+      display: flex;
+  }
+
+  .menu-toggle.active .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .menu-toggle.active .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
   .landing-page{
-    height: 350px;
+    height: 600px;
     color: #fff;
     padding: 20px;
     background-image: url(assets/sergey-pesterev-wdMWMHXUpsc-unsplash.jpg)  ;
@@ -183,7 +255,7 @@
   }
   
   .social-icon,
-  .menu {
+  .menu-footer {
     position: relative;
     display: flex;
     justify-content: center;
