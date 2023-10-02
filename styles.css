@@ -6,10 +6,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+/* navigationbar*/
+
 .navbar {
   width: 100vw;
   height: 50px;
-  background-color: #333;
+  background-color: hwb(0 0% 100% / 0.856);
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -82,56 +84,50 @@
       transform: rotate(45deg) translate(-5px, -6px);
   }
 }
+/* navigationbar*/
 
-  .landing-page{
-    height: 600px;
-    color: #fff;
+
+/*lANDING-PAGE*/
+  #landing-page {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
     padding: 20px;
-    background-image: url(assets/sergey-pesterev-wdMWMHXUpsc-unsplash.jpg)  ;
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center center;
-    box-sizing: border-box;
   }
-  .text-box {
-    width: 50%;
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
+  
+  h1 {
+    font-size: 2rem;
     text-align: center;
-    line-height: 2;
-    padding-right: 135px;
   }
   
-  h2 {
-    font-size: 1 rem;
-    font-weight: bold;
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
+  
+  .landing-btn{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  /*lANDING-PAGE*/
 
-  .donate-now-button {
-    width: 150px;
-    height: 50px;
-    background-color: #f8f5f5;
-    color: green;
-    border-radius: 17px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    text-transform: uppercase;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-top: 250px;
-  }
+
+
+
   
-  .donate-now-button:hover {
-    background-color: #FF4500;
-  }
-  
-  .donate-now-button:active {
-    background-color: #FF8C00;
-  }
+
+   /* programs-container*/
   .main-div {
     display: flex;
     justify-content: center;
@@ -169,6 +165,9 @@
  .program-btn{
   margin-top: 15px;
  }
+   /* programs-container*/
+
+   /*donation-container*/
   .donatebx{
     width: 100%;
     height: 200px;
@@ -242,6 +241,10 @@
     box-shadow: 0 0 0 0 #fff;
   }
 }
+/*donation-container*/
+
+
+/* FOOTER SECTION*/
   .footer {
     position: relative;
     width: 100%;
@@ -301,3 +304,4 @@
     font-size: 1rem;
     font-weight: 300;
   }
+  /* FOOTER SECTION*/
