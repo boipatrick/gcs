@@ -11,7 +11,7 @@
 .navbar {
   width: 100vw;
   height: 50px;
-  background-color: hwb(0 5% 27% / 0.856);
+  background-color: hwb(0 10% 89% / 0.856);
   color: #fff;
   display: flex;
   justify-content: space-between;
