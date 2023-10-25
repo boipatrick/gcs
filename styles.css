@@ -11,7 +11,7 @@
 .navbar {
   width: 100vw;
   height: 50px;
-  background-color: hwb(0 10% 89% / 0.856);
+  background-color: hwb(0 0% 96% / 0.856);
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -124,41 +124,43 @@
 
 
   /* About Us */
-  .about-us {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  
-  .about-us-subheader {
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  
-  .about-us img {
-    width: 100%;
-    height: auto;
-  }
-  .about-us h2{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      z-index: 1;
-      }
-  
-  @media (max-width: 768px) {
-    .about-us .row {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .about-us .col-md-6 {
-      width: 100%;
-    }
-  }
-  
+        /* Common Styles */
+        .about-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .about-section .text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about-section img {
+            width: 50%;
+            border-radius: 8px;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 767px) {
+            .about-section {
+                flex-direction: column; /* Change the flex direction to stack elements vertically */
+            }
+
+            .about-section img {
+                width: 80%; /* Adjust the image width for mobile */
+            }
+        }
+
+        /* Desktop Styles */
+        @media (min-width: 768px) {
+            .about-section {
+                flex-direction: row; /* Maintain a horizontal layout for desktop */
+            }
+
+            .about-section .text {
+                flex: 1; /* Take up half of the available space */
+            }
+        }
 
  /* About Us */
 
