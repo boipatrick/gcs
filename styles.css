@@ -208,10 +208,15 @@
   }
   
   .programs .card {
+    min-height: 200px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
     margin: 10px;
+  }
+  .programs .card i {
+    display: block;
+    text-align: center;
   }
   
   .programs .card h3 {
