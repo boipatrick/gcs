@@ -134,12 +134,25 @@
             flex: 1;
             padding: 20px;
         }
-
-        .about-section img {
-            width: 50%;
-            border-radius: 8px;
-        }
-
+        .button-link{
+            padding: 0.6rem 1.3rem;
+            background-color: green;
+            border: 2px solid #fafafa;
+            font-size: 0.95rem;
+            color: whitesmoke;
+            line-height: 1;
+            border-radius: 25px;
+            outline: none;
+            cursor: pointer;
+            transition: 0.3s;
+            margin:0;
+            text-decoration: none;
+          }
+          
+          .button-link:hover {
+            background-color: lightgreen;
+            color: #6fbb82f3;
+          }
         /* Mobile Styles */
         @media (max-width: 767px) {
             .about-section {
@@ -147,8 +160,9 @@
             }
 
             .about-section img {
-                width: 80%; /* Adjust the image width for mobile */
-            }
+              width: 80%; /* Adjust the image width for mobile */
+              border-radius: 8px;
+          }
         }
 
         /* Desktop Styles */
@@ -156,6 +170,11 @@
             .about-section {
                 flex-direction: row; /* Maintain a horizontal layout for desktop */
             }
+            .about-section img {
+              max-width: 38%;
+              height: auto; /* Adjust the image width for desktop */
+              border-radius: 8px;
+          }
 
             .about-section .text {
                 flex: 1; /* Take up half of the available space */
