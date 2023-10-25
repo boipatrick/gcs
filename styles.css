@@ -214,11 +214,7 @@
     text-align: center;
     margin: 10px;
   }
-  .programs .card i {
-    display: block;
-    text-align: center;
-  }
-  
+ 
   .programs .card h3 {
     font-size: 24px;
     font-weight: 700;
