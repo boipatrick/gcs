@@ -156,11 +156,11 @@
         /* Mobile Styles */
         @media (max-width: 767px) {
             .about-section {
-                flex-direction: column; /* Change the flex direction to stack elements vertically */
+                flex-direction: column; 
             }
 
             .about-section img {
-              width: 80%; /* Adjust the image width for mobile */
+              width: 80%; 
               border-radius: 8px;
           }
         }
@@ -168,16 +168,16 @@
         /* Desktop Styles */
         @media (min-width: 768px) {
             .about-section {
-                flex-direction: row; /* Maintain a horizontal layout for desktop */
+                flex-direction: row; 
             }
             .about-section img {
               max-width: 38%;
-              height: auto; /* Adjust the image width for desktop */
+              height: auto; 
               border-radius: 8px;
           }
 
             .about-section .text {
-                flex: 1; /* Take up half of the available space */
+                flex: 1; 
             }
         }
 
@@ -189,54 +189,43 @@
 
   
    /* programs-container*/
-   .programs {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    position: relative;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .programs h2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  z-index: 1;
-  }
-  
-  .programs .card {
-    min-height: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
+   .programs{
+    width: 100%;
+    margin: auto;
     text-align: center;
-    margin: 10px;
+    padding-top: 100px
   }
- 
-  .programs .card h3 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 10px;
+  .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content:space-evenly;
+  }
+  .programs-col{
+    width: 100%;
+    height: 250px;
+    flex-basis: 31%;
+    background: #9af092;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+  }
+  .programs-col:first-child {
+    margin-left: 10px;
   }
   
-  .programs .card p {
-    font-size: 16px;
-    margin-bottom: 10px;
+  .programs-col:last-child {
+    margin-right: 10px;
   }
-  
-  .programs .card .btn {
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 4px;
-  }
-  
+
   @media (max-width: 768px) {
-    .programs .row {
-      flex-direction: column;
+    .row {
+        flex-direction: column;
     }
-  }
+    }
+ 
+   
+  
 
    /* In Touch */
    .get-in-touch {
@@ -346,7 +335,7 @@
   }
   /* FOOTER SECTION*/
 
-  /* CONTACT FORM*/
+  /* CONTACT US PAGE*/
 
   .container {
     position: relative;
@@ -721,7 +710,9 @@
       padding: 0.45rem 1.2rem;
     }
   }
-  /* CONTACT FORM*/
+/* CONTACT US PAGE*/
+
+
 
 
   /* About Page Styling*/
