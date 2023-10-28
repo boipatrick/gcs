@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  
 }
 /* navigationbar*/
 
@@ -89,6 +90,7 @@
 
 /*lANDING-PAGE*/
 .landing-page {
+  height: 100vh;
   background-image: url(background-image.jpg);
   background-size: cover;
   background-position: center center;
@@ -201,14 +203,16 @@
     justify-content:space-evenly;
   }
   .programs-col{
-    width: 100%;
     height: 250px;
     flex-basis: 31%;
-    background: #9af092;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    margin: 10px;
   }
   .programs-col:first-child {
     margin-left: 10px;
